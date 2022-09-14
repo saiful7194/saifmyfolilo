@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.align-center{
+    align-items: center;
+}
+
+.button{
+    width: 196px;
+    height: 48px;
+    background-color: #cfc91d;
+    display: block;
+    margin: auto;
+    font-size: 14px;
+    font-weight: 800;
+    color: #0b1016;
+    text-transform: uppercase;
+    line-height: 48px;
+}
+
+.heading{
+    font-weight: 800;
+    font-size: 46px;
+     color: #02918c;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+}
+
+.heading::after {
+    content: "";
+    width: 162px;
+    height: 9px;
+    background-image: url(../img/heiding.png);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon {
+    font-size: 25px;
+    color: #02918c;
+}
+.subHeading{
+    color: #7e8287;
+    font-weight: 800;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.cardContent {
+    color: #7e8287;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 0 50px;
+}
+a{
+    text-decoration: none;
+}
+ul,ol {
+    list-style: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/* Navbar STARTS HERE */
+nav{
+    background-color: #02918c;
+}
+nav .logo{
+    width: 30%;
+}
+nav .menu{
+    width: 70%;
+}
+nav .menu ul{
+    text-align: right;
+}
+nav .menu ul li{
+    display: inline-block;
+}
+nav .menu ul li a{
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 26px 25px;
+    display: block;
+}
+/* Navbar ENDS HERE */
+/* Banner START HERE */
+#banner{
+    background-image: url(../img/banner.jpg); 
+    background-color: rgba(0, 0, 0, 0.34);
+    background-blend-mode: multiply;
+    height: 730px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#banner .row {
+    height: 730px;
+}
+
+
+#banner .bannerCnt { 
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+#banner .bannerCnt h3{
+    font width: 400;
+    font-size: 30px;
+}
+#banner .bannerCnt h2 {
+    font-weight: 800;
+    font-size: 68px;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+#banner .bannerCnt p{
+    font width: 400;
+    font size: 18px;
+}
+
+#banner .bannerCnt img{ 
+    margin: 50px 0;
+}
+#banner .bannerCnt a{
+
+}
+/* Banner ENDS HERE */
+
+/* About Start Here*/
+#about{
+    padding: 98px 0;
+}
+#about .aboutText {
+    width: 874px;
+    margin: 70px auto 30px auto;
+    text-align: center;
+    font-size: 16;
+    color: #7e8287;
+}
+#about .aboutText span {
+    font-size: 23px;
+    font-weight: 800;
+    color:#7e8287;
+
+}
+#about .aboutCard{
+    width: 25%;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    padding: 40px 0;
+}
+#about .aboutCard:last-child{
+    border: none;
+}
+/* About Ends Here*/
+
+/* Services section Start */
+  #service {
+    padding: 73px 0;
+    background-image: url(../img/img.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .service_left{
+   width: 50%;
+  }
+  #service .heading{
+    text-align: left;
+  }
+  #service .heading::after {
+    left: 0;
+    transform: translateX(-0%);
+  }
+  .serviceCard{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+ .serviceCard p {
+    padding: 0;
+    padding-right: 80px;
+
+ }
+ .serviceText {
+    margin: 40px 0;
+    width: 400;
+    color: #7e8287;
+ }
+/* Services section Start */
+
+/* Work Section Start */
+#work {
+    padding: 50px 0;
+}
+.workcard {
+width: 25%;
+position: relative;
+}
+.workcard img {
+    width: 100%;
+    display: block;
+}
+#work .workText {
+    width: 600px;
+    margin: 70px auto 30px auto;
+    text-align: center;
+    font-size: 16;
+    color: #7e8287;
+}
+#work .workcard .overlay {
+    position: absolute;
+    /*top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;*/
+    inset: 20px;
+    background-color: rgba(2, 145, 140, 0.85);
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.3s;
+}
+
+#work .workcard:hover .overlay {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.overlay .row {
+    height: 100%;
+}
+/* Work Section Ends*/
+
+/* CONTACT FORM STARTS HERE*/
+#contactForm {
+    padding: 65px 0;
+    background-color: #0a0a0b;
+}
+
+#contactForm .form_input {
+    width: 640px;
+    margin: auto;
+}
+
+#contactForm .form_input input{
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    margin: 70px auto 30px auto;
+}
+
+
+#contactForm .form_textarea {
+    width: 925;
+    color: white;
+    margin: auto;
+    margin: 70px auto 30px auto;
+}
+
+#contactForm .form_textarea label{
+    display: block;
+    text-align: center;
+}
+#contactForm .form_textarea textarea{
+    width: 100%;
+    height: 95px;
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin: 70px auto 30px auto;
+    color: white;
+}
+
+#contactForm  p{
+    text-align: center;
+    color: #7e8287;
+    margin: 70px auto 30px auto;
+}
+
+#contact .contactText {
+    width: 600px;
+    margin: 70px auto 30px auto;
+    text-align: center;
+    font-size: 16;
+    color: #7e8287;
+}
+#contact .heading {
+    margin: 70px auto 30px auto;
+}
+/* CONTACT FORM STARTS HERE*/
